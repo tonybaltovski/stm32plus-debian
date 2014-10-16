@@ -1,0 +1,5 @@
+stm32plus (3.4.0-1) UNRELEASED; urgency=low
+
+  * Initial release.
+
+ -- Mike Purvis <mike@uwmike.com>  Thu, 16 Oct 2014 11:17:01 -0400

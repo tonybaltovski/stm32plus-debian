@@ -1,0 +1,32 @@
+Source: stm32plus
+Maintainer: Mike Purvis <mike@uwmike.com>
+Section: devel
+Priority: extra
+Standards-Version: 3.9.5
+Build-Depends:
+  debhelper (>= 9),
+  gcc-arm-none-eabi,
+  libstdc++-arm-none-eabi-newlib,
+  scons,
+Homepage: https://github.com/andysworkshop/stm32plus
+
+Package: stm32plus-dev
+Architecture: all
+Depends:
+  dfu-util,
+  gcc-arm-none-eabi,
+  libstdc++-arm-none-eabi-newlib,
+Description: stm32plus headers
+ Include directory for stm32plus header files, and cmake find module.
+
+Package: stm32plus-small-f4-25000000
+Architecture: all
+Depends: stm32plus-dev
+Description: stm32plus built library
+ Pre-built static library for a particular build configuration.
+
+Package: stm32plus-small-f4-25000000-examples
+Architecture: all
+Depends: dfu-util
+Description: stm32plus example binaries
+ Pre-built example binaries for a particular build configuration.
