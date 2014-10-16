@@ -13,6 +13,7 @@ Homepage: https://github.com/andysworkshop/stm32plus
 Package: stm32plus-headers
 Architecture: all
 Depends:
+  ${misc:Depends},
   dfu-util,
   gcc-arm-none-eabi,
   libstdc++-arm-none-eabi-newlib,
@@ -21,12 +22,12 @@ Description: stm32plus headers
 
 Package: stm32plus-small-f4-25000000
 Architecture: all
-Depends: stm32plus-headers
+Depends: ${misc:Depends}, stm32plus-headers
 Description: stm32plus built library
  Pre-built static library for a particular build configuration.
 
 Package: stm32plus-small-f4-25000000-examples
 Architecture: all
-Depends: dfu-util
+Depends: ${misc:Depends}, dfu-util
 Description: stm32plus example binaries
  Pre-built example binaries for a particular build configuration.

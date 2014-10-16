@@ -1,4 +1,4 @@
-stm32plus (3.4.0-1) UNRELEASED; urgency=low
+stm32plus (3.4.0-1) trusty; urgency=low
 
   * Initial release.
 

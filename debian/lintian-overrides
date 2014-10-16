@@ -1,1 +1,3 @@
 arch-independent-package-contains-binary-or-object
+executable-not-elf-or-script *
+file-in-unusual-dir *
