@@ -1,0 +1,2 @@
+/usr/arm-none-eabi/lib/stm32plus-*/libstm32plus-small-f4-25000000.a
+/usr/arm-none-eabi/lib/stm32plus-*/stm32plus-config-small-f4-25000000.cmake

@@ -10,7 +10,7 @@ Build-Depends:
   scons,
 Homepage: https://github.com/andysworkshop/stm32plus
 
-Package: stm32plus-dev
+Package: stm32plus-headers
 Architecture: all
 Depends:
   dfu-util,
@@ -21,7 +21,7 @@ Description: stm32plus headers
 
 Package: stm32plus-small-f4-25000000
 Architecture: all
-Depends: stm32plus-dev
+Depends: stm32plus-headers
 Description: stm32plus built library
  Pre-built static library for a particular build configuration.
 
