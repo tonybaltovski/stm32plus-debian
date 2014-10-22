@@ -1,4 +1,4 @@
-#!/usr/bin/make -f
+@("#!/usr/bin/make -f")
 
 SCONS=scons
 INSTALLDIR=$$(pwd)/debian/tmp/usr/arm-none-eabi
