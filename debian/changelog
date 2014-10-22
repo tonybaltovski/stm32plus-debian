@@ -1,3 +1,9 @@
+stm32plus (3.4.0-3) trusty; urgency=medium
+
+  * Try again with added MCU configurations.
+
+ -- Mike Purvis <mike@uwmike.com>  Wed, 22 Oct 2014 08:19:57 -0400
+
 stm32plus (3.4.0-2) trusty; urgency=low
 
   * Added more MCU configurations.
