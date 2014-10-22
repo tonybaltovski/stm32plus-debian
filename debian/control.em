@@ -1,5 +1,5 @@
 Source: stm32plus
-Maintainer: Mike Purvis <mike@uwmike.com>
+Maintainer: Mike Purvis <mike@@uwmike.com>
 Section: devel
 Priority: extra
 Standards-Version: 3.9.5
@@ -20,14 +20,16 @@ Depends:
 Description: stm32plus headers
  Include directory for stm32plus header files, and cmake find module.
 
-Package: stm32plus-small-f4-25000000
+@[for config_string in config_strings]
+Package: stm32plus-@(config_string)
 Architecture: all
 Depends: ${misc:Depends}, stm32plus-headers
 Description: stm32plus built library
- Pre-built static library for a particular build configuration.
+ Pre-built static library for the @(config_string) build configuration.
 
-Package: stm32plus-small-f4-25000000-examples
+Package: stm32plus-@(config_string)-examples
 Architecture: all
 Depends: ${misc:Depends}, dfu-util
 Description: stm32plus example binaries
- Pre-built example binaries for a particular build configuration.
+ Pre-built example binaries for the @(config_string) build configuration.
+@[end for]

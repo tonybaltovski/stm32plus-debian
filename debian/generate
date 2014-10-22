@@ -1,0 +1,46 @@
+#!/usr/bin/env python
+
+config_strings = [
+  "small-f1mdvl-8000000",
+  "small-f1hd-8000000",
+  "small-f1cle-8000000",
+  "small-f051-8000000",
+  "small-f4-8000000",
+  "small-f4-8000000-hard",
+  "small-f4-25000000",
+  "small-f4-25000000-hard"
+]
+
+
+import em
+
+def main():
+    # Write out the install file lists for the library and example packages.
+    for config_string in config_strings:
+        with open("stm32plus-" + config_string + ".install", "w") as output:
+            interpreter = em.Interpreter(output=output)
+            interpreter.updateGlobals({ "config_string": config_string })
+            interpreter.file(open("stm32plus-CONFIG.install.em", "r"))
+            interpreter.shutdown()
+
+        with open("stm32plus-" + config_string + "-examples.install", "w") as output:
+            interpreter = em.Interpreter(output=output)
+            interpreter.updateGlobals({ "config_string": config_string })
+            interpreter.file(open("stm32plus-CONFIG-examples.install.em", "r"))
+            interpreter.shutdown()
+
+    # Write out the control file for the source package.
+    with open("control", "w") as output:
+        interpreter = em.Interpreter(output=output, globals={})
+        interpreter.updateGlobals({ "config_strings": config_strings })
+        interpreter.file(open("control.em", "r"))
+        interpreter.shutdown()
+
+    # Write out the build rules for the source package.
+    with open("rules", "w") as output:
+        interpreter = em.Interpreter(output=output, globals={})
+        interpreter.updateGlobals({ "config_strings": config_strings })
+        interpreter.file(open("rules.em", "r"))
+        interpreter.shutdown()
+
+main()
