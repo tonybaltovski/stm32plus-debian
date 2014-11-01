@@ -1,3 +1,9 @@
+stm32plus (3.5.0-1) trusty; urgency=medium
+
+  * Update to stm32plus 3.5.0.
+
+ -- Mike Purvis <mike@uwmike.com>  Sat, 01 Nov 2014 10:54:07 -0400
+
 stm32plus (3.4.0-3) trusty; urgency=medium
 
   * Try again with added MCU configurations.
