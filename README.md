@@ -15,17 +15,20 @@ Better instructions coming soon, but in short:
 
  - Clone this repo to a path like `stm32plus-x.y.z` where `x.y.z` is the version to release.
     ```
-    git clone https://github.com/mikepurvis/stm32plus-debian stm32plus-3.5.0
+    git clone https://github.com/mikepurvis/stm32plus-debian stm32plus-3.6.0
     ```
 
  - Download the [stm32plus source tarball](https://github.com/andysworkshop/stm32plus/releases)
    for the version to release, and extract it, overwriting the files from this repo:
     ```
-    wget https://github.com/andysworkshop/stm32plus/archive/3.5.0.tar.gz -O stm32plus_3.5.0.orig.tar.gz
-    tar xvzf stm32plus_3.5.0.orig.tar.gz
+    wget https://github.com/andysworkshop/stm32plus/archive/3.6.0.tar.gz -O stm32plus_3.6.0.orig.tar.gz
+    tar xvzf stm32plus_3.6.0.orig.tar.gz
     ```
 
- - Now inside the workspace/stm32plus-x.y.z/debian folder, run `dch`, and edit the changelog accordingly.
+ - Now inside the workspace/stm32plus-x.y.z/debian folder:
+
+   * run `dch`, and edit the changelog accordingly.
+   * run `generate` to create the templated rules file.
 
  - In the stm32plus-x.y.z folder, build the source package, and upload it to the PPA:
     ```
