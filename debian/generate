@@ -6,9 +6,9 @@ config_strings = [
   "small-f1cle-8000000",
   "small-f051-8000000",
   "small-f4-8000000",
-  "small-f4-8000000-hard",
+#  "small-f4-8000000-hard",
   "small-f4-25000000",
-  "small-f4-25000000-hard"
+#  "small-f4-25000000-hard"
 ]
 
 
