@@ -1,3 +1,9 @@
+stm32plus (4.0.0-0) trusty; urgency=medium
+
+  * Update to stm32plus 4.0.0.
+
+ -- Mike Purvis <mike@uwmike.com>  Wed, 11 Mar 2015 10:37:39 -0400
+
 stm32plus (3.6.0-2ubuntu1~trusty) trusty; urgency=medium
 
   * Retry stm32plus with hardfloat builds disabled.
