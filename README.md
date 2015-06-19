@@ -13,16 +13,21 @@ Better instructions coming soon, but in short:
 
  - Create a workspace directory.
 
- - Clone this repo to a path like `stm32plus-x.y.z` where `x.y.z` is the version to release.
+ - Set an env var with the version you are releasing:
     ```
-    git clone https://github.com/mikepurvis/stm32plus-debian stm32plus-3.6.0
+    VER=4.0.3
+    ```
+
+ - Clone this repo to a path like `stm32plus-x.y.z`:
+    ```
+    git clone https://github.com/mikepurvis/stm32plus-debian stm32plus-$VER
     ```
 
  - Download the [stm32plus source tarball](https://github.com/andysworkshop/stm32plus/releases)
    for the version to release, and extract it, overwriting the files from this repo:
     ```
-    wget https://github.com/andysworkshop/stm32plus/archive/3.6.0.tar.gz -O stm32plus_3.6.0.orig.tar.gz
-    tar xvzf stm32plus_3.6.0.orig.tar.gz
+    wget https://github.com/andysworkshop/stm32plus/archive/$VER.tar.gz -O stm32plus_$VER.orig.tar.gz
+    tar xvzf stm32plus_$VER.orig.tar.gz
     ```
 
  - Now inside the workspace/stm32plus-x.y.z/debian folder:
@@ -39,3 +44,9 @@ Better instructions coming soon, but in short:
 To run a local build, instead do:
 
     debuild -uc -us
+
+When complete, commit your changes back to this repo:
+
+    git checkout .gitignore README.md
+    git add .
+    git commit -m "Changes for $VER"
