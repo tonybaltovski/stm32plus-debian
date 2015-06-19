@@ -1,3 +1,10 @@
+stm32plus (4.0.2-0) trusty; urgency=medium
+
+  * Update to stm32plus 4.0.2.
+  * Restore hardfloat builds.
+
+ -- Mike Purvis <mike@uwmike.com>  Fri, 19 Jun 2015 13:45:50 -0400
+
 stm32plus (4.0.0-0) trusty; urgency=medium
 
   * Update to stm32plus 4.0.0.
