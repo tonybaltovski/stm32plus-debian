@@ -26,11 +26,11 @@ def main():
     # Write out the install file lists for the library and example packages.
     for config_string in config_strings:
         with em_expansion("stm32plus-" + config_string + ".install") as e:
-            e.updateGlobals({ "config_string": config_string })
+            e.updateGlobals({ "config_string": config_string + "e" })
             e.file(open("stm32plus-CONFIG.install.em", "r"))
 
         with em_expansion("stm32plus-" + config_string + "-examples.install") as e:
-            e.updateGlobals({ "config_string": config_string })
+            e.updateGlobals({ "config_string": config_string + "e" })
             e.file(open("stm32plus-CONFIG-examples.install.em", "r"))
 
     # Top-level package configuration.

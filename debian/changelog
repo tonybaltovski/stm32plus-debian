@@ -1,3 +1,15 @@
+stm32plus (4.0.3-1) trusty; urgency=medium
+
+  * Fix for new hse/hsi path.
+
+ -- Mike Purvis <mike@uwmike.com>  Tue, 15 Mar 2016 08:25:03 -0400
+
+stm32plus (4.0.3-0) trusty; urgency=medium
+
+  * Update to stm32plus 4.0.3.
+
+ -- Mike Purvis <mike@uwmike.com>  Tue, 15 Mar 2016 07:28:09 -0400
+
 stm32plus (4.0.2-0) trusty; urgency=medium
 
   * Update to stm32plus 4.0.2.
