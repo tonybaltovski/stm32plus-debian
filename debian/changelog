@@ -1,3 +1,9 @@
+stm32plus (4.0.3-4) trusty; urgency=medium
+
+  * Re-enable other builds.
+
+ -- Mike Purvis <mike@uwmike.com>  Tue, 15 Mar 2016 11:23:46 -0400
+
 stm32plus (4.0.3-3) trusty; urgency=medium
 
   * Patch for compatibility with legacy STM32PLUS_CONFIGURATION values in
