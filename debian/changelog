@@ -1,3 +1,16 @@
+stm32plus (4.0.3-3) trusty; urgency=medium
+
+  * Patch for compatibility with legacy STM32PLUS_CONFIGURATION values in
+  cmake.
+
+ -- Mike Purvis <mike@uwmike.com>  Tue, 15 Mar 2016 10:59:18 -0400
+
+stm32plus (4.0.3-2) trusty; urgency=medium
+
+  * Re-enable other builds.
+
+ -- Mike Purvis <mike@uwmike.com>  Tue, 15 Mar 2016 08:41:45 -0400
+
 stm32plus (4.0.3-1) trusty; urgency=medium
 
   * Fix for new hse/hsi path.
