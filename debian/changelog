@@ -1,3 +1,10 @@
+stm32plus (4.0.3-5) trusty; urgency=medium
+
+  * Patch for allowing weak link time override of MillisecondTimer delay
+  function. Allows for overriding busy-wait with a yield.
+
+ -- Mike O'Driscoll <mike@mikeodriscoll.ca>  Thu, 24 Mar 2016 16:01:34 -0400
+
 stm32plus (4.0.3-4) trusty; urgency=medium
 
   * Re-enable other builds.
