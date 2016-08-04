@@ -2,6 +2,7 @@
 
 config_strings = [
   "small-f4-25000000",
+  "small-f4-8000000"
 ]
 
 

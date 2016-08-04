@@ -38,7 +38,7 @@ Better instructions coming soon, but in short:
  - In the stm32plus-x.y.z folder, build the source package, and upload it to the PPA:
     ```
     debuild -S
-    dput ppa:mikepurvis/stm32
+    dput ppa:clearpath-robotics/stm32
     ```
 
 To run a local build, instead do:

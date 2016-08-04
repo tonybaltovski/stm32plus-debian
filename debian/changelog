@@ -1,3 +1,9 @@
+stm32plus (4.0.4-6ubuntu1) trusty; urgency=medium
+
+  * Release 4.0.4
+
+ -- Mike O'Driscoll <mike@mikeodriscoll.ca>  Thu, 04 Aug 2016 09:31:41 -0400
+
 stm32plus (4.0.3-6) trusty; urgency=medium
 
   * Disable builds in generate other than small f4 25000000
