@@ -1,3 +1,15 @@
+stm32plus (4.0.6-1ubuntu2) xenial; urgency=medium
+
+  * Release 4.0.6
+
+ -- Tony Baltovski <tbaltovski@clearpathrobotics.com>  Mon, 03 Feb 2020 14:28:39 -0500
+
+stm32plus (4.0.5-1ubuntu1) xenial; urgency=medium
+
+  * Release 4.0.5
+
+ -- Tony Baltovski <tbaltovski@clearpathrobotics.com>  Mon, 03 Feb 2020 13:36:18 -0500
+
 stm32plus (4.0.4-6ubuntu1) trusty; urgency=medium
 
   * Release 4.0.4
